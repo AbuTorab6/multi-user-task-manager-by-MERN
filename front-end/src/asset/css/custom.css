@@ -1,0 +1,884 @@
+/***************************************/
+/**********Besic Set up*****************/
+/***************************************/
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body
+{   
+font-family: 'Montserrat', sans-serif;
+
+text-rendering: optimizeLegibility;
+background-color: rgb(248, 249, 250);
+
+}
+
+.row
+{
+    width: 1140px;
+    margin: auto;
+}
+
+section
+{
+    overflow: hidden;
+    padding: 50px 0px;
+}
+
+
+
+/***************************************/
+/**********Navigation Bar*****************/
+/***************************************/
+
+.navigation-bg
+{
+    background-color: #ffffff;
+    color: black;
+    box-shadow: 0px 0.5px 5px rgb(136, 136, 136);
+}
+.navigation-brand
+{
+    color: black;
+    border-bottom: 2px solid rgb(238, 82, 79);
+}
+.navigation-brand:hover
+{
+    color: black;
+    
+}
+
+.nav-logo
+{
+    color: rgb(238, 82, 79);
+    margin-right: 10px;
+}
+
+.nav-logo:hover
+{
+    cursor: pointer;
+}
+/***************************************/
+/**********Drop down*****************/
+/***************************************/
+.drp-down-img
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.drp-down-content
+{
+    width: 260px;
+
+    position: absolute;
+    right: 20px;
+
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow:2px 2px 8px rgb(136, 136, 136);
+
+    display: none;
+    transition:2s;
+}
+
+.drp-down:hover .drp-down-content
+{
+    display: block;
+}
+
+.drp-down-content-img
+{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 85px;
+}
+
+.drp-down-content-info h6
+{
+    text-align: center;
+}
+.drp-down-item
+{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.drp-down-item:hover
+{
+    cursor: pointer;
+    border-left: 10px solid rgb(238, 82, 79);
+    background-color: rgba(238, 82, 79, 0.408);
+    color: black;
+    padding: 5px 0px;
+}
+
+
+/************************************/
+/**********Side Navigation************/
+/***************************************/
+.side-nav-open
+{
+    padding-top: 100px;
+    width: 240px;
+    height: 100%;
+
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+
+
+
+.side-nav-close
+{
+    padding-top: 100px;
+    width: 0px;
+    height: 100%;
+
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+
+
+
+.side-nav-item
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px; 
+    transition: 0.5s;   
+}
+.side-nav-item:hover
+{
+    background-color:rgb(238, 82, 79) ;
+    color: white;
+}
+
+.side-nav-item-active
+{
+    border-left: 10px solid rgb(238, 82, 79);
+    background-color: rgba(238, 82, 79, 0.484);
+}
+
+.side-nav-icon
+{
+    margin-left: 10px;
+}
+
+.side-nav-text
+{
+    margin-left: 15px;
+}
+
+
+
+/**************************************/
+/************Content******************/
+/***************************************/
+.content
+{
+    margin-top: 80px;
+    margin-left: 240px;
+    color: black;
+
+    transition: 0.3s;
+}
+
+.content-expand
+{
+    margin-top: 80px;
+    color: black;
+
+    transition: 0.3s;
+}
+
+
+
+/**************************************/
+/*********Full Screen Loader***********/
+/***************************************/
+.full-screen
+{
+    
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    height: 100%;
+
+    display: block;
+    z-index: 5000000;
+    background-color: transparent !important;
+
+}
+
+
+.line .core::after
+{
+    content: "";
+    width: 800px;
+    height: 3px;
+    display: block;
+    background-color:rgb(238, 82, 79);
+
+    position: fixed;
+    animation: proma;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+.line .core::before
+{
+    content: "";
+    width: 800px;
+    height: 3px;
+    display: block;
+    background-color:rgb(238, 82, 79);
+
+    position: fixed;
+    animation: liza;
+    animation-iteration-count: infinite;
+
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+@keyframes proma {
+    0% {
+        left: -35%;
+        right: 100%;
+    }
+
+    60% {
+        left: 100%;
+        right: -90%;
+    }
+
+    100% {
+        left: 100%;
+        right: -90%;
+    }
+}
+
+@keyframes liza {
+    0% {
+        left: -200%;
+        right: 100%;
+    }
+
+    60% {
+        left: 107%;
+        right: -8%;
+    }
+
+    100% {
+        left: 107%;
+        right: -8%;
+    }
+}
+
+
+
+
+.visibility-none
+{
+    display: none;
+}
+
+.visibility-yes
+{
+    display: block;
+}
+
+
+/**************************************/
+/*********Log IN***********/
+/***************************************/
+.login-section
+{
+    text-align: center;
+}
+.login-section .form
+{
+    background-color: #ffffff;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198);
+
+    border-left: 10px solid rgb(238, 82, 79);
+}
+
+.login-section h5
+{
+    margin-bottom: 20px;
+}
+
+.login-section input
+{
+    width: 90%;
+    height: 35px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 2;
+    padding-left: 20px;
+    
+}
+
+
+
+.login-section .next-btn
+{
+    width: 90%;
+    height: 35px;
+    margin: auto;
+    background-color:rgb(238, 82, 79);
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+    color: white;
+}
+
+
+.login-section .forget-password-link
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.login-section .sign-up-link
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 8px;
+}
+
+/**************************************/
+/*********Registration ***********/
+/***************************************/
+.regi-section
+{
+    text-align: center;
+}
+.regi-section .form
+{
+    background-color: #ffffff;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198);
+
+    border-left: 10px solid rgb(238, 82, 79);
+}
+
+.regi-section h5
+{
+    margin-bottom: 20px;
+}
+
+.regi-section input
+{
+    width: 90%;
+    height: 35px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 2;
+    padding-left: 20px;
+    
+}
+
+
+
+.regi-section .next-btn
+{
+    width: 90%;
+    height: 35px;
+    margin: auto;
+    background-color:rgb(238, 82, 79);
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+    color: white;
+}
+
+
+.regi-section .forget-password-link
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 8px;
+}
+
+
+/**************************************/
+/*************Dashboard ***************/
+/***************************************/
+.dashboard-grid
+{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    text-align: center;
+    padding: 20px;
+}
+
+.dashboard-grid .col
+{
+    background-color: #ffffff;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198);
+    padding: 20px;
+    height: 110px;
+
+    border-radius: 10px;
+}
+
+
+
+/**************************************/
+/*************Craete Task ***************/
+/***************************************/
+/***************************************/
+.create-task-section
+{
+    text-align: center;
+}
+.create-task-section .form
+{
+    background-color: #ffffff;
+    width: 800px;
+    margin: auto;
+    margin-top: 150px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198);
+
+   
+}
+
+.create-task-section h5
+{
+    margin-bottom: 20px;
+}
+
+.create-task-section input
+{
+    width: 90%;
+    height: 35px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 2;
+    padding-left: 20px;
+    
+}
+
+.create-task-section textarea
+{
+    width: 90%;
+    height: 105px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 2;
+    padding-left: 20px;
+    
+}
+.create-task-section .create-task-btn
+{
+    width: 20%;
+    height: 45px;
+    margin: auto;
+    background-color:rgb(238, 82, 79);
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+    color: white;
+}
+
+
+/**************************************/
+/********Complete Task,Canceled task,New Task,Progress ***************/
+/***************************************/
+.complete-task-section
+{
+    padding: 20px;
+}
+
+
+
+.complete-task-top-grid
+{
+    display: grid !important;
+    grid-template-columns: 2fr 1fr;
+    
+}
+
+.complete-task-top-inner-grid
+{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.complete-task-top-inner-grid input
+{
+    
+    height: 35px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.complete-task-search-btn
+{
+   
+   height: 35px;
+    background-color:rgb(238, 82, 79);
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+
+    color: white;
+}
+
+
+.complete-task-card-grid
+{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.complete-task-card-grid .col
+{
+    background-color: #ffffff;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198);
+    padding: 20px;
+   
+    border-radius: 10px;
+}
+
+.complete-task-card-inner-grid
+{
+    display: grid !important;
+    grid-template-columns: 2fr 1fr;
+}
+
+.complete-task-card-inner-grid span
+{
+    margin-left: 15px;
+    color: rgb(238, 82, 79);
+    cursor: pointer;
+    padding: 5px 3px;
+
+}
+.complete-task-card-inner-grid span:active
+{
+    background-color: rgba(165, 163, 163, 0.337);
+    
+    border-radius:5px ;
+}
+
+.complete-task-status-btn
+{
+    height: 25px;
+    background-color:rgb(0, 190, 0);
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+
+    color: white;
+
+    float: right;
+    
+}
+
+.canceled-task-status-btn
+{
+    height: 25px;
+    background-color:rgb(190, 0, 0);
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+
+    color: white;
+
+    float: right;
+}
+.new-task-status-btn
+{
+    height: 25px;
+    background-color:rgb(13, 111, 215);
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+
+    color: white;
+
+    float: right;
+}
+
+.progress-task-status-btn
+{
+    height: 25px;
+    background-color:rgb(247, 109, 3);
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+
+    color: white;
+
+    float: right;
+}
+
+
+
+/**************************************/
+/**************Profile***************/
+/***************************************/
+.profile-section
+{
+    padding: 20px;
+}
+
+.profile-section .form
+{
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198); 
+}
+
+.profile-form-grid
+{
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.profile-form-grid input
+{
+    display: block;
+    width: 90%;
+    height: 30px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.profile-section .profile-update-btn
+{
+
+    height: 35px;
+    background-color:rgb(238, 82, 79);
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 20px;
+    width: 40%;
+    margin: auto;
+    display: block;
+
+    color: white;
+}
+
+
+/**************************************/
+/**************Send OTP***************/
+/***************************************/
+.send-otp-section
+{
+    text-align: center;
+}
+.send-otp-section .form
+{
+    background-color: #ffffff;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198);
+
+    border-left: 10px solid rgb(238, 82, 79);
+}
+
+.send-otp-section h5
+{
+    margin-bottom: 20px;
+}
+
+.send-otp-section input
+{
+    width: 90%;
+    height: 35px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 2;
+    padding-left: 20px;
+    
+}
+
+
+
+.send-otp-section .next-btn
+{
+    width: 90%;
+    height: 35px;
+    margin: auto;
+    background-color:rgb(238, 82, 79);
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+    color: white;
+}
+
+
+
+/**************************************/
+/**************Verify OTP***************/
+/***************************************/
+.verify-otp-section
+{
+    text-align: center;
+}
+.verify-otp-section .form
+{
+    background-color: #ffffff;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198);
+
+    border-left: 10px solid rgb(238, 82, 79);
+}
+
+.verify-otp-section h5
+{
+    margin-bottom: 20px;
+}
+
+.verify-otp-section .input
+{
+   
+    margin-bottom: 20px;
+ 
+    
+}
+
+
+
+.verify-otp-section .next-btn
+{
+    width: 90%;
+    height: 35px;
+    margin: auto;
+    background-color:rgb(238, 82, 79);
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+    color: white;
+}
+
+
+
+/**************************************/
+/**************New Password***************/
+/***************************************/
+.new-password-section
+{
+    text-align: center;
+}
+.new-password-section .form
+{
+    background-color: #ffffff;
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    padding: 30px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px rgb(198, 198, 198);
+
+    border-left: 10px solid rgb(238, 82, 79);
+}
+
+.new-password-section h5
+{
+    margin-bottom: 20px;
+}
+
+.new-password-section input
+{
+    width: 90%;
+    height: 35px;
+    border: 0.5px solid rgb(196, 194, 194);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 2;
+    padding-left: 20px;
+}
+
+.new-password-section .next-btn
+{
+    width: 90%;
+    height: 35px;
+    margin: auto;
+    background-color:rgb(238, 82, 79);
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+
+    color: white;
+}
+
+
