@@ -36,7 +36,7 @@ https://taskmanager.abutorab.me
 
 
 <h2>Features:</h2>
-<p>Users can sign up for the system.Once registered, a user can log in to the system. If user forget his password, he can recover his password. password recovery will be done in three steps. At first 6 digit OTP code will be sent to the user's email. Then when the will provide the OTP code, it will be verified. After that password recover option will be given to the user.</p>
+<p>Users can sign up for the system.Once registered, a user can log in to the system. If user forget his password, he can recover his password. password recovery will be done in three steps. At first 6 digit OTP code will be sent to the user's email. Then when user will provide the OTP code, it will be verified. After that password recover option will be given to the user.</p>
 <p>After login user will see a dashboard which will contain the summary of all the tasks, for example how many tasks have been completed, how many have been canceled, how many are in progress and how many are new tasks.</p>
 <p>
 <p>From the "Create New" page user can create new task. User can see all new task on the "New Task" page. The tasks which are in progress can be seen on the "In Progress" page. Completed task can be seen on "Completed" page. And the tasks that have been canceled can be seen on the "Canceled" page.</p>
